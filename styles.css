@@ -4,7 +4,8 @@ h1{
     border:solid white;
     margin-left:20%;
     margin-right:20%;
-    background-color: brown
+    background-color: brown;
+    font-size:55px;
 
 }
 body{
@@ -13,4 +14,13 @@ body{
     background-repeat:no-repeat;
     margin-left:20px;
     margin-right:20px;
+}
+#pizza{
+    text-align:center;
+    color:white;
+    font-size:30px;
+    font-weight:bolder;
+}
+#the{
+    color:brown;
 }
