@@ -36,3 +36,12 @@ body{
     border-radius:15px;
     padding:10px;
 }
+#lastname,#firstname{
+    width:250px;
+}
+.row{
+    color:black;
+    background-color:palevioletred;
+    width:20%;
+    border-radius:25px;
+}
