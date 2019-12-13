@@ -61,7 +61,14 @@ h2{
     color:white;
     width:40%;
     border-radius:20px;
+    background-image:url("https://as1.ftcdn.net/jpg/02/10/80/40/500_F_210804077_nQ8XWe2fBvrCfDP8t1GumjuhHZneikRM.jpg");
+    background-size:contain;
+    float:left;
 }
 #x, #y, #z{
     width:450px;
+}
+#about >h3{
+    color:white;
+
 }
