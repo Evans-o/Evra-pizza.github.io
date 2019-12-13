@@ -1,0 +1,16 @@
+h1{
+    text-align:center;
+    color:white;
+    border:solid white;
+    margin-left:20%;
+    margin-right:20%;
+    background-color: brown
+
+}
+body{
+    background-image:url("https://as1.ftcdn.net/jpg/02/71/07/22/500_F_271072270_5HKdRo26aCWvQ64FflFh1BCu6s9QF86B.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin-left:20px;
+    margin-right:20px;
+}
