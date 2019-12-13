@@ -37,11 +37,20 @@ body{
     padding:10px;
 }
 #lastname,#firstname{
-    width:250px;
+    width:450px;
+    
+
 }
 .row{
     color:black;
-    background-color:palevioletred;
-    width:20%;
-    border-radius:25px;
+    width:25%;
+}
+h2{
+    color:whitesmoke;
+    font-size:20px;
+}
+#order{
+    width:25%;
+    color:black;
+    background-color:transparent;
 }
