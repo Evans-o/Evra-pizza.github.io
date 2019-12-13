@@ -23,4 +23,16 @@ body{
 }
 #the{
     color:brown;
+    font-family: 'Dancing Script', cursive;
+    font-size:33px;
+
+}
+#best{
+    font-size:55px;
+}
+#house, #nice{
+    background-color:whitesmoke;
+    width:60%;
+    border-radius:15px;
+    padding:10px;
 }
