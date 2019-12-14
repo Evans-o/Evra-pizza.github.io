@@ -146,11 +146,14 @@ bottom:90px;
 right:250px;
 
 }
-.card-footer,h3,h,li{
+.card-footer,h,li{
     color:white;
 }
 footer{
     border: 3px solid lavenderblush;
     height:150px;
     text-align:center;
+}
+footer >h3{
+    color:white;
 }
