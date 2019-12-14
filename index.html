@@ -7,7 +7,7 @@
     <title>Pizza pizza</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="js/scripts.js"></script>
+  <script src="js/script.js"></script>
   <script src="jss/jquery-3.3.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
@@ -22,14 +22,13 @@
     </div>
     <div id="pot">
       <img src="https://i.stack.imgur.com/qgNyF.png?s=328&g=1" width=100px height=100px>
-      <p> pizza inn,the bestchoice!!</p>
+      <p> pizza inn,the best choice for you!!</p>
     </div>
 <br><br><br><br>
 <div id="black">
-  <form>
-    <!-- pizza type -->
-    <h2>Pizza type</h2>
-    <div>
+    <form action="/action_page.php">
+      <h2>Pizza type</h2>
+      <div>
         <input id="pizza-margarita" name="pizza-type" type="radio" value="margarita: (fresh mozzarella and basil with sauce)">magarita<br>
             <label for="pizza-margarita"><strong>Margarita</strong> (fresh mozzarella and basil with sauce)</label></div><br>
             <div>
@@ -44,76 +43,75 @@
             <div>
             <input id="type-custom" name="pizza-type" type="radio" value="custom:(design your own!)" checked>
             <label for="type-custom"><strong>Custom</strong> (design your own!)</label></div>
+            <h2>Toppings</h2>
+            <div>
+            <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
+            <label for="topping-cheese"><strong>Cheese</strong></label>
+            <label class="visuallyhidden" for="topping-cheese-location">Cheese location</label>
+            <select id="topping-cheese-location" name="cheese-location">
+              <option value="all" selected>All over</option>
+              <option value="left">Left side</option>
+              <option value="right">Right side</option>
+          </select>
+          </div>
+          <div>
+            <input id="topping-pepperoni" name="topping" type="checkbox" value="pepperoni">
+            <label for="topping-pepperoni"><strong>Pepperoni</strong></label>
+            <!-- for a cleaner experience, we'd only add the <select> when the checkbox is checked -->
+          </div>
+          <div>
+            <input id="topping-beef" name="topping" type="checkbox" value="beef" checked>
+            <label for="topping-beef"><strong>Ground beef</strong></label>
+            <label class="visuallyhidden" for="topping-beef-location">Beef location</label>
+            <select id="topping-beef-location" name="beef-location">
+              <option value="all">All over</option>
+              <option value="left" selected>Left side</option>
+              <option value="right">Right side</option>
+            </select>
+          </div>
+          <div>
+            <input id="topping-spinach" name="topping" type="checkbox" value=" spinach" checked>
+            <label for="topping-spinach"><strong>Fresh spinach</strong></label>
+            <label class="visuallyhidden" for="topping-spinach-location">Spinach location</label>
+            <select id="topping-spinach-location" name="spinach-location">
+              <option value="all">All over</option>
+              <option value="left">Left side</option>
+              <option value="right" selected>Right side</option>
+            </select>
+          </div>
+          <div>
+            <input id="topping-peppers" name="topping" type="checkbox" value="peppers">
+            <label for="topping-peppers"><strong>Grilled peppers</strong></label>
+          </div>
+          <div>
+            <label for="pizza-size"><strong>Size</strong></label>
+            <select id="pizza-size" name="pizza-size">
+              <option value="s">Small</option>
+              <option value="m">Medium</option>
+              <option value="l" selected>Large</option>
+              <option value="xl">Extra large</option>
+            </select>
+          </div>
+          <div>
+          <div>
+            <label for="pizza-qty"><strong>Quantity</strong></label>
+            <select id="pizza-qty" name="pizza-qty">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
         <br>
-    <h2>Toppings</h2>
-    <!-- toppings -->
-    <div>
-      <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
-      <label for="topping-cheese"><strong>Cheese</strong></label>
-      <label class="visuallyhidden" for="topping-cheese-location">Cheese location</label>
-      <select id="topping-cheese-location" name="cheese-location">
-        <option value="all" selected>All over</option>
-        <option value="left">Left side</option>
-        <option value="right">Right side</option>
-    </select>
-    </div>
-    <div>
-      <input id="topping-pepperoni" name="topping" type="checkbox" value="pepperoni">
-      <label for="topping-pepperoni"><strong>Pepperoni</strong></label>
-      <!-- for a cleaner experience, we'd only add the <select> when the checkbox is checked -->
-    </div>
-    <div>
-      <input id="topping-beef" name="topping" type="checkbox" value="beef" checked>
-      <label for="topping-beef"><strong>Ground beef</strong></label>
-      <label class="visuallyhidden" for="topping-beef-location">Beef location</label>
-      <select id="topping-beef-location" name="beef-location">
-        <option value="all">All over</option>
-        <option value="left" selected>Left side</option>
-        <option value="right">Right side</option>
-      </select>
-    </div>
-    <div>
-      <input id="topping-spinach" name="topping" type="checkbox" value="spinach" checked>
-      <label for="topping-spinach"><strong>Fresh spinach</strong></label>
-      <label class="visuallyhidden" for="topping-spinach-location">Spinach location</label>
-      <select id="topping-spinach-location" name="spinach-location">
-        <option value="all">All over</option>
-        <option value="left">Left side</option>
-        <option value="right" selected>Right side</option>
-      </select>
-    </div>
-    <div>
-      <input id="topping-peppers" name="topping" type="checkbox" value="peppers">
-      <label for="topping-peppers"><strong>Grilled peppers</strong></label>
-      <!-- for a cleaner experience, we'd only add the <select> when the checkbox is checked -->
-    </div>
-    <h2>Important details</h2>
-    <!-- size -->
-    <div>
-      <label for="pizza-size"><strong>Size</strong></label>
-      <select id="pizza-size" name="pizza-size">
-        <option value="s">Small</option>
-        <option value="m">Medium</option>
-        <option value="l" selected>Large</option>
-        <option value="xl">Extra large</option>
-      </select>
-    </div>
-    <div>
-    <div>
-      <label for="pizza-qty"><strong>Quantity</strong></label>
-      <select id="pizza-qty" name="pizza-qty">
-        <option value="1" selected>1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-      </select>
-    </div>
-    <input type="button"  onclick="myFunction()" value="Send order">
-    <input type="text" id="order" size="200">
-  <input type="submit" value="Submit">
-  </form>
+        
+        <input type="button" onclick="myFunction()" value="Send order">
+        <br><br>
+        <input type="text" id="order"  size="80">
+        <input type="submit" value="Submit"><br>
+        
+      </form>
 </div><br><br>
 </div>
 <div id="About">
