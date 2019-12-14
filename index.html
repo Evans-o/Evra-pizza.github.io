@@ -21,28 +21,29 @@
     <p id="the"><span id="house">pizza house</span></p>
     </div>
     <div id="pot">
-      <img width="200"src="https://pizzainn.co.ke/wp-content/uploads/2017/05/Pizza-Inn-Logo-CMYKLRLS.jpg" width=100px height=100px>
+      <img width="150"src="https://pizzainn.co.ke/wp-content/uploads/2017/05/Pizza-Inn-Logo-CMYKLRLS.jpg" width=100px height=100px>
+      <img src="https://i.stack.imgur.com/qgNyF.png?s=328&g=1" width=100px height=100px>
       <p> pizza inn,the best choice for you!!</p>
     </div>
 <br><br><br><br>
 <div id="black">
-    <form action="/action_page.php">
+    <form action="form">
       <h2>Pizza type</h2>
       <div>
-        <input id="pizza-margarita" name="pizza-type" type="radio" value="margarita: (fresh mozzarella and basil with sauce)">magarita<br>
-            <label for="pizza-margarita"><strong>Margarita</strong> (fresh mozzarella and basil with sauce)</label></div><br>
+        <input id="margarita" name="pizza-type" type="radio" value="margarita: (fresh mozzarella and basil with sauce)">margarita<br>
+            <label for="margarita"><strong>Margarita</strong> (fresh mozzarella and basil with sauce)</label></div><br>
             <div>
-        <input id="pizza-mushroom" name="pizza-type" type="radio" value="mushroom: (all the mushrooms you can handle)">
-            <label for="pizza-mushroom"><strong>Mondo Mushroom</strong> (all the mushrooms you can handle)</label></div><br>
+        <input id="mushroom" name="pizza-type" type="radio" value="mushroom: (all the mushrooms you can handle)">
+            <label for="mushroom"><strong>Mondo Mushroom</strong> (all the mushrooms you can handle)</label></div><br>
             <div>
-        <input id="pizza-sausage" name="pizza-type" type="radio" value="sausage (Italian sausage and peppers)">
-            <label for="pizza-sausage"><strong>Classic sausage</strong> (Italian sausage and peppers)</label></div><br>
+        <input id="sausage" name="pizza-type" type="radio" value="sausage (Italian sausage and peppers)">
+            <label for="sausage"><strong>Classic sausage</strong> (Italian sausage and peppers)</label></div><br>
             <div>
-            <input id="pizza-veggie" name="pizza-type" type="radio" value="veggie: (seasonal veggie medley)">
-            <label for="pizza-veggie"><strong>Vegetables!</strong> (seasonal veggie medley)</label></div><br>
+            <input id="veggie" name="pizza-type" type="radio" value="veggie: (seasonal veggie medley)">
+            <label for="veggie"><strong>Vegetables!</strong> (seasonal veggie medley)</label></div><br>
             <div>
-            <input id="type-custom" name="pizza-type" type="radio" value="custom:(design your own!)" checked>
-            <label for="type-custom"><strong>Custom</strong> (design your own!)</label></div>
+            <input id="custom" name="pizza-type" type="radio" value="custom:(design your own!)" checked>
+            <label for="custom"><strong>Custom</strong> (design your own!)</label></div>
             <h2>Toppings</h2>
             <div>
             <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
@@ -69,6 +70,7 @@
               <option value="right">Right side</option>
             </select>
           </div>
+          </form>
           <div>
             <input id="topping-spinach" name="topping" type="checkbox" value=" spinach" checked>
             <label for="topping-spinach"><strong>Fresh spinach</strong></label>
@@ -109,7 +111,7 @@
         <input type="button" onclick="myFunction()" value="Send order">
         <br><br>
         <input type="text" id="order"  size="80">
-        <input type="submit" id="submit" value="Submit"><br>
+        <button type="submit" id="submit" onclick="myfunction()"class="btn btn-primary col-md-1">Submit</button><br>
         
       </form>
 </div><br><br>
