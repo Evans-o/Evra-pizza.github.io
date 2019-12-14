@@ -120,6 +120,8 @@ text-decoration: underline;
     -webkit-animation:linear infinite alternate;
     -webkit-animation-name: run;
     -webkit-animation-duration: 20s;
+    color:white;
+    font-weight:bolder;
 }     
 @-webkit-keyframes run {
     0% { left: 0;}
