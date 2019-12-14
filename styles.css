@@ -106,3 +106,10 @@ font-size:25px;
 color:black;
 text-decoration: underline;
 }
+#About >p{
+    position:absolute;
+    bottom:65%;
+    width:80%;
+    font-size:25px;
+    margin-left:60px;
+}
