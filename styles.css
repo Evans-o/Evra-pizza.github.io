@@ -95,7 +95,7 @@ h2{
     width:55%;
     margin-left:90px;
     left:700px;
-    height:970px;
+    height:670px;
     align-content:center;
 }
 h3{
@@ -141,12 +141,6 @@ input#order{
     text-align:center;
     font-size:20px;
 }
-#submit{
-position:relative;
-bottom:90px;
-right:250px;
-
-}
 .card-footer,h,li{
     color:white;
 }
@@ -158,3 +152,8 @@ footer{
 footer >h3{
     color:white;
 }
+/* <input type="button" onclick="myFunction()" value="Send order">
+        <br><br>
+        <input type="text" id="order"  size="80">
+        <button type="submit" id="submit" onclick="myfunction()"class="btn btn-primary col-md-1">Submit</button><br>
+         */
