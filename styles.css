@@ -128,12 +128,13 @@ text-decoration: underline;
     50%{ left : 100%;}
     100%{ left: 0;}
 }
+.button{
+    border-radius: 10px;
+  }
 #order{
     position:relative;
     right:29px;
     color:white;
-    height:90px;
-    width:50%;;
 }
 input#order{
     position:relative;

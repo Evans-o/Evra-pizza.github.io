@@ -27,93 +27,53 @@
     </div>
 <br><br><br><br>
 <div id="black">
-    <form action="form">
-      <h2>Pizza type</h2>
-      <div>
-        <input id="margarita" name="pizza-type" type="radio" value="margarita: (fresh mozzarella and basil with sauce)">margarita<br>
-            <label for="margarita"><strong>Margarita</strong> (fresh mozzarella and basil with sauce)</label></div><br>
-            <div>
-        <input id="mushroom" name="pizza-type" type="radio" value="mushroom: (all the mushrooms you can handle)">
-            <label for="mushroom"><strong>Mondo Mushroom</strong> (all the mushrooms you can handle)</label></div><br>
-            <div>
-        <input id="sausage" name="pizza-type" type="radio" value="sausage (Italian sausage and peppers)">
-            <label for="sausage"><strong>Classic sausage</strong> (Italian sausage and peppers)</label></div><br>
-            <div>
-            <input id="veggie" name="pizza-type" type="radio" value="veggie: (seasonal veggie medley)">
-            <label for="veggie"><strong>Vegetables!</strong> (seasonal veggie medley)</label></div><br>
-            <div>
-            <input id="custom" name="pizza-type" type="radio" value="custom:(design your own!)" checked>
-            <label for="custom"><strong>Custom</strong> (design your own!)</label></div>
-            <h2>Toppings</h2>
-            <div>
-            <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
-            <label for="topping-cheese"><strong>Cheese</strong></label>
-            <label class="visuallyhidden" for="topping-cheese-location">Cheese location</label>
-            <select id="topping-cheese-location" name="cheese-location">
-              <option value="all" selected>All over</option>
-              <option value="left">Left side</option>
-              <option value="right">Right side</option>
-          </select>
-          </div>
-          <div>
-            <input id="topping-pepperoni" name="topping" type="checkbox" value="pepperoni">
-            <label for="topping-pepperoni"><strong>Pepperoni</strong></label>
-            <!-- for a cleaner experience, we'd only add the <select> when the checkbox is checked -->
-          </div>
-          <div>
-            <input id="topping-beef" name="topping" type="checkbox" value="beef" checked>
-            <label for="topping-beef"><strong>Ground beef</strong></label>
-            <label class="visuallyhidden" for="topping-beef-location">Beef location</label>
-            <select id="topping-beef-location" name="beef-location">
-              <option value="all">All over</option>
-              <option value="left" selected>Left side</option>
-              <option value="right">Right side</option>
-            </select>
-          </div>
-          </form>
-          <div>
-            <input id="topping-spinach" name="topping" type="checkbox" value=" spinach" checked>
-            <label for="topping-spinach"><strong>Fresh spinach</strong></label>
-            <label class="visuallyhidden" for="topping-spinach-location">Spinach location</label>
-            <select id="topping-spinach-location" name="spinach-location">
-              <option value="all">All over</option>
-              <option value="left">Left side</option>
-              <option value="right" selected>Right side</option>
-            </select>
-          </div>
-          <div>
-            <input id="topping-peppers" name="topping" type="checkbox" value="peppers">
-            <label for="topping-peppers"><strong>Grilled peppers</strong></label>
-          </div>
-          <div>
-            <label for="pizza-size"><strong>Size</strong></label>
-            <select id="pizza-size" name="pizza-size">
-              <option value="s">Small</option>
-              <option value="m">Medium</option>
-              <option value="l" selected>Large</option>
-              <option value="xl">Extra large</option>
-            </select>
-          </div>
-          <div>
-          <div>
-            <label for="pizza-qty"><strong>Quantity</strong></label>
-            <select id="pizza-qty" name="pizza-qty">
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-          </div>
-        <br>
-        
-        <input type="button" onclick="myFunction()" value="Send order">
-        <br><br>
-        <input type="text" id="order"  size="80">
-        <button type="submit" id="submit" onclick="myfunction()"class="btn btn-primary col-md-1">Submit</button><br>
-        
-      </form>
+  <form action="">
+    <label for="select">Select Your Flavor</label>
+    <select class="browser-default custom-select custom-select-md mb-3 name">
+      <!-- <option selected value="choose">Choose your flavor</option> -->
+      <option value="Chicken Tikka">Chicken Tikka</option>
+      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+    </select>
+  <label for="select">Select Size</label>
+  <select class="browser-default custom-select custom-select-md mb-3" id="size">
+    <option selected value="0">Select size here</option>
+    <option value="large">Large -- sh. 1200</option>
+    <option value="medium">Medium -- sh. 850</option>
+    <option value="small">Small -- sh. 600</option>
+  </select>
+  <label for="crust">Choose your favorite Crust!</label>
+    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+        <option selected value="0">Select your preferred crust!</option>
+      <option value="Crispy">Crispy -- sh. 200</option>
+      <option value="Stuffed">Stuffed -- sh. 150</option>
+      <option value="Gluten-free">Gluten-free-- sh. 180</option>
+    </select>
+  <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+      <label class="custom-control-label" for="Sausage">Sausage</label>
+    </div>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+      <label class="custom-control-label" for="Bacon">Bacon</label>
+    </div>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+      <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+    </div>
+    <br><br>
+    <button  type="submit"onclick="myFunction()">procceed</button> 
+</form>
+<div id="information">
+  <p>Your order will be processed and delivered within one hour of placing.</p>
+  <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+  <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+  <p id="regards">Regards, Management</p>
+</div>
 </div><br><br>
 </div>
 <div id="About">
