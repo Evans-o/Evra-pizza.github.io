@@ -101,7 +101,7 @@ h2{
     width:55%;
     margin-left:90px;
     left:700px;
-    height:670px;
+    height:700px;
     align-content:center;
     top:130px;
 }
@@ -200,4 +200,10 @@ ol{
 }
 #space{
     margin:5px;
+}
+#deliver{
+    display:none;
+    position:relative;
+    left:100px;
+    top:10px;
 }

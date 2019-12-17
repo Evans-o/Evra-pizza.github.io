@@ -418,3 +418,9 @@ $(function () {
         $.scrollify.move('#sum-order');
     });
 });
+$(document).ready(function(){
+    $("#checkout").click(function(){
+$("#checkout").slideDown('1500');
+$("#deliver").show('100');
+    }
+)})
