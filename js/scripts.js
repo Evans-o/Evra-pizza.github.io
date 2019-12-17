@@ -418,12 +418,20 @@ $(document).ready(function(){
       var name = $("input#name").val();
       var number = $("input#num").val();
       var location= $("textarea#location").val();
-      if ($(name).val() && $(number).val() && $(location)){
-        alert (name + ", we have received your message. Thank you for reaching out to us.");
+      
+      if(name == ""){
+        alert("please enter your name ,number and your location");
+        return false;
+      }else if (number == ""){
+        alert("please enter your name ,number and your location");
+        return false;
+      }else if (location== ""){
+        alert("please enter your name ,number and your location");
+        return false;
       }
-      else {
-        alert("Please enter your name your number and location!");
-        event.preventDefault();
+      else{
+          alert("thankyou!");
+          event.preventDefault();
       }
       
     });
