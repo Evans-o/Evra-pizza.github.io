@@ -422,7 +422,7 @@ $(document).ready(function(){
       var location= $("textarea#location").val();
       
       if(name == ""){
-        alert("please enter your name ,number and your location");
+        alert("please enter your name ,number and your location for delivery!");
         return false;
       }else if (number == ""){
         alert("please enter your name ,number and your location");
@@ -432,12 +432,13 @@ $(document).ready(function(){
         return false;
       }
       else{
-          alert("Hi "  +  name  + " thankyou for choosing pizza inn your oder will be Deliverd at your location ,prepare ksh 200 for delivery!");
+          alert("Hi "  +  name  + " thankyou for choosing pizza inn your oder has been received and it will be delivered in your location ,prepare ksh 200 for delivery!");
           event.preventDefault();
       }
 $("#hide").slideDown(2000).hide("2000");
 $(".summary").hide(2000);
 $('#list').hide(2000);
+$("#ord").fadeIn(3000);
       
     });
   
