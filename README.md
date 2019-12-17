@@ -1,4 +1,4 @@
-<h1>Piiz-Inn</h1>
+<h1>Piza-Inn</h1>
 <h1>Author</h1>
 <li>Evans - Opindi</li>
 <h1>Description</h1>
