@@ -401,6 +401,7 @@ $(document).ready(function(){
     $("#checkout").click(function(){
 $("#checkout").slideDown('1500').hide('1500');
 $("#deliver").show('100');
+$("#orde").hide();
 event.preventDefault();
 
     }
@@ -411,7 +412,7 @@ $(document).ready(function(){
         $("#deliver").hide("'150");
         $(prompt("do you want to request for a delivery?"));
         event.preventDefault();
-        $("#hide").show("200");
+        $("#hide").fadeIn("4000");
         $("#checkout").show('1500');
     })
 })
@@ -420,6 +421,15 @@ $(document).ready(function(){
     $("#ord").click(function(){
         $("#ord").fadeOut(3000).hide();
         $("#checkout").fadeIn(3500).show();
+    })
+})
+
+$(document).ready(function(){
+    $("#orde").click(function(){
+        $("#orde").hide();
+        $("#ord").slideDown(3000);
+        $(".summary").fadeIn(3000);
+        $('#list').fadeIn(3000);
     })
 })
 $(document).ready(function(){
@@ -440,13 +450,14 @@ $(document).ready(function(){
         return false;
       }
       else{
-          alert("Hi "  +  name  + " thankyou for choosing pizza inn your oder has been received and it will be delivered in your location ,prepare ksh 200 for delivery!");
+          alert("Hi "  +  name  + " thankyou for choosing pizza inn, your oder has been received and it will be delivered in your location ,prepare ksh 200 for delivery!");
           event.preventDefault();
       }
 $("#hide").slideDown(2000).hide("2000");
 $(".summary").hide(2000);
 $('#list').hide(2000);
 $("#ord").fadeIn(3000);
+$("#orde").fadeIn(3000);
 $("#checkout").hide("200");
       
     });

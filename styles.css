@@ -101,7 +101,7 @@ h2{
     width:55%;
     margin-left:90px;
     left:700px;
-    height:700px;
+    height:720px;
     align-content:center;
     top:130px;
 }
@@ -183,7 +183,7 @@ footer >h3{
     position:relative;
     top:250px;
     color:black;
-    right:550px;
+    right:590px;
 }
 h{
     text-decoration:underline;
@@ -210,8 +210,14 @@ ol{
 }
 #ord{
     position:relative;
-    bottom:200px;
-    left:150px;
+    bottom:230px;
+    left:260px;
     padding:10px;
+    display:none;
+}
+#orde{
+    position:relative;
+    left:270px;
+    bottom:230px;
     display:none;
 }
