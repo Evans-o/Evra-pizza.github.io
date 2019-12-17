@@ -221,3 +221,7 @@ ol{
     bottom:230px;
     display:none;
 }
+#deliver{
+    position:relative;
+    top:10px;
+}
