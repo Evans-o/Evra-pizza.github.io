@@ -189,3 +189,12 @@ h{
     text-decoration:underline;
     font-size:30px;
 }
+ol{
+    color:whitesmoke;
+}
+#hide{
+    position:relative;
+    bottom:480px;
+    left:480px;
+    width:50%;
+}
