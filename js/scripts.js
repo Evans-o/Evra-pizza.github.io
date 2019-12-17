@@ -395,28 +395,7 @@ $(function () {
             + newOrder.t + "<br>" + " Number of pizza  :    "
             + newOrder.n + "<br>" + "Total Price :  "
             + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
-    });
-
-    //Deliver
-    $(".deliver").click(function () {
-        $('.summary').slideUp();
-        $('#list').slideUp();
-        $('.summary').text("Provide location details").slideDown();
-        $('.deliver').hide(1000);
-        $('.delivernot').hide(1000);
-        $('.cdata-overlay').slideDown();
-    });
-
-
-    //Pick Up
-    $(".delivernot").click(function () {
-
-    });
-
-    //Scrollify
-    $(function () {
-        $.scrollify.move('#sum-order');
-    });
+    })
 });
 $(document).ready(function(){
     $("#checkout").click(function(){
@@ -431,3 +410,21 @@ $(document).ready(function(){
         $("#hide").show("200");
     })
 })
+
+$(document).ready(function(){
+    $("form#togle").submit(function(event){
+      // event.preventDefault();
+      var name = $("input#name").val();
+      var number = $("input#num").val();
+      var location= $("textarea#location").val();
+      if ($("input#name").val() && $("input#num").val() && $("input#location")){
+        alert (name + ", we have received your message. Thank you for reaching out to us.");
+      }
+      else {
+        alert("Please enter your name and email!");
+      }
+      
+    });
+  
+  });
+
