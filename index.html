@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizza pizza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../images/Delaninew.ico" />
+  <title>pizza</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
   <script src="jss/jquery-3.3.1.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
- <div class="container-fluid">
-     <div id="pizza">
+    <div class="container-fluid">
+     <div id="pizza pizza">
     <h1>WELCOME TO OUR NEW WEBSITE</h1></p><br><br><br><br>
     <p id="the"><span id="nice">THE</span></p><br>
     <h2>
     <p id="best">BEST PIZZA IN TOWN</p></h2><br>
     <p id="the"><span id="house">pizza house</span></p>
     </div>
-    <div id="pot">
-      <img width="150"src="https://pizzainn.co.ke/wp-content/uploads/2017/05/Pizza-Inn-Logo-CMYKLRLS.jpg" width=100px height=100px>
-      <img src="https://i.stack.imgur.com/qgNyF.png?s=328&g=1" width=100px height=100px>
-      <p> pizza inn,the best choice for you!!</p>
-    </div>
+    
 <br><br><br><br>
-<div id="black">
+<div id="black"><br>
   <form action="">
-    <label for="select">Select Your Flavor</label>
-    <select class="browser-default custom-select custom-select-md mb-3 name">
-      <!-- <option selected value="choose">Choose your flavor</option> -->
-      <option value="Chicken Tikka">Chicken Tikka</option>
-      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
-      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
-      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
-      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
-      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
-    </select>
-  <label for="select">Select Size</label>
-  <select class="browser-default custom-select custom-select-md mb-3" id="size">
-    <option selected value="0">Select size here</option>
-    <option value="large">Large -- sh. 1200</option>
-    <option value="medium">Medium -- sh. 850</option>
-    <option value="small">Small -- sh. 600</option>
-  </select>
-  <label for="crust">Choose your favorite Crust!</label>
-    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-        <option selected value="0">Select your preferred crust!</option>
-      <option value="Crispy">Crispy -- sh. 200</option>
-      <option value="Stuffed">Stuffed -- sh. 150</option>
-      <option value="Gluten-free">Gluten-free-- sh. 180</option>
-    </select>
-  <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
-    <div class="custom-control custom-checkbox custom-control-inline">
-      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-      <label class="custom-control-label" for="Sausage">Sausage</label>
-    </div>
-    <div class="custom-control custom-checkbox custom-control-inline">
-      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-      <label class="custom-control-label" for="Bacon">Bacon</label>
-    </div>
-    <div class="custom-control custom-checkbox custom-control-inline">
-      <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-      <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-    </div>
-    <br><br>
-    <button  type="submit" class="btn btn-success" >proceed</button> 
-</form>
-<div id="information">
-  <p>Your order will be processed and delivered within one hour of placing.</p>
-  <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-  <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
-  <p id="regards">Regards, Management</p>
+    <form class="col-sm-6 offset-sm-3 text-center">
+      <label>Pick your pizza Flavour:</label><br><br>
+      <select class="custom-select custom-select-md mb-3" id="flavour" required>
+          <option value="vegtikka">Veg Tikka</option>
+          <option value="chickentikka">Chicken Tikka</option>
+          <option value="periperi">Peri-Peri Chicken</option>
+          <option value="bbq">BBQ Steak</option>
+          <option value="boerewors">Boerewors</option>
+          <option value="hawaiian">Hawaiian</option>
+          <option value="mushroom">Chicken and Mushroom</option>
+          <option value="regina">Regina Pizza</option>
+      </select><br>
+      <label>Chose your preferred Size:</label><br><br>
+      <select class="custom-select custom-select-md mb-3" id="size" required>
+          <option value="regular">Regular</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+      </select><br>
+      <label for="crust">Choose your favorite Crust:</label><br><br>
+      <select class="custom-select custom-select-md mb-3" id="crust" required>
+          <option value="thin">Thin Crust @ Ksh. 100</option>
+          <option value="thick">Thick Crust @ Ksh. 150</option>
+          <option value="flatbread">FlatBread Crust @ sh. 180</option>
+          <option value="custom">Custom Crust @ sh. 280</option>
+      </select><br>
+      <label>Select Your favourite Toppings</label><br><br>
+      <select class="custom-select custom-select-md mb-3" id="toppings" required>
+          <option value="tomato">Tomato @ sh. 80</option>
+          <option value="onions">Onions @ sh. 80</option>
+          <option value="mushroom">Mushroom @ sh. 80</option>
+          <option value="greenpepper">Green Pepper @ sh. 80</option>
+          <option value=""></option>
+          <option value="olives">Olives @ sh. 120</option>
+          <option value="pineapple">Pineapple @ sh. 120</option>
+          <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+          <option value="macon">Macon @ sh. 120</option>
+          <option value="mince">Mince @ sh. 120</option>
+          <option value=""></option>
+          <option value="beef">Beef Peperoni @ sh. 170</option>
+          <option value="chicken">Periperi Chicken @ sh. 170</option>
+      </select><br>
+      <label for="number">Number of Pizza's</label><br><br>
+      <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required><br><br>
+      <button type="submit" class="btn btn-success checkout" id="checkout">
+          Checkout
+      </button><br>
+  </form>
 </div>
-</div><br><br>
+<div class="col-sm-2"></div>
 </div>
 <div id="About">
   <h3>what we believe</h3>
   <p>We at Pizza inn bilieve that the simple act of feeding people is at the core of what it is to be human. We focus on vitual of taking life on the world around us and presenting it to your own life.
   Just take a look to this images below to identify which type of pizza you would like to have.Feel free to fun up with the images and their ingredients!!!! </p>
-</div>
-
-</body><br><br>
-<footer>
-<div class="card-footer"><h3>CONTACT WITH US</h3></div><br>
-<li>TELL: +24540772578 /24504966675</li>
-<li>E-mail:<a href="https://pizzainn.co.ke/contact-us/">www.pizzainn@yahoo.com</a></li>
-<h3>CONNECT WITH PIZZA INN</h3>
-</footer>
-</html>
+</div><br><br><br><br>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"e71bed4d6ae5a7c984dfe28b0","lid":"dbf7e27685","uniqueMethods":true}) })</script>
+  <script src="jss/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
 </html>

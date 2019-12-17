@@ -768,7 +768,7 @@ pre code {
   -ms-flex-order: 10;
   order: 10;
 }
-/home/moringaschool/Downloads/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css.map
+
 .order-11 {
   -ms-flex-order: 11;
   order: 11;
@@ -824,7 +824,7 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .col-sm {/home/moringaschool/Downloads/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css.map
+  .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
