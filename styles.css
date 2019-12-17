@@ -179,3 +179,9 @@ footer >h3{
     position:relative;
     bottom:40px;
 }
+#summary,ol,h,h4{
+    position:relative;
+    top:250px;
+    color:black;
+    right:550px;
+}
