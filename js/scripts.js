@@ -407,6 +407,8 @@ $("#deliver").show('100');
 $(document).ready(function(){
     $("#deliver").click(function(){
         $("#deliver").hide("'150");
+        $(prompt("do you want to request for a delivery?"));
+        event.preventDefault();
         $("#hide").show("200");
         $("#checkout").show('1500');
     })
@@ -426,13 +428,16 @@ $(document).ready(function(){
         alert("please enter your name ,number and your location");
         return false;
       }else if (location== ""){
-        alert("please enter your name ,number and your location");
+        alert("please enter your location");
         return false;
       }
       else{
-          alert("Hi "  +  name  + " thankyou for choosing pizza inn, your oder will be Delivered at your location ,prepare ksh 200 for delivery!");
+          alert("Hi "  +  name  + " thankyou for choosing pizza inn your oder will be Deliverd at your location ,prepare ksh 200 for delivery!");
           event.preventDefault();
       }
+$("#hide").slideDown(2000).hide("2000");
+$(".summary").hide(2000);
+$('#list').hide(2000);
       
     });
   
