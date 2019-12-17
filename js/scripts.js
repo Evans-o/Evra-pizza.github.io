@@ -420,7 +420,14 @@ $(function () {
 });
 $(document).ready(function(){
     $("#checkout").click(function(){
-$("#checkout").slideDown('1500');
+$("#checkout").slideDown('1500').hide('1500');
 $("#deliver").show('100');
     }
 )})
+
+$(document).ready(function(){
+    $("#deliver").click(function(){
+        $("#deliver").show("'150");
+        $("#hide").show("200");
+    })
+})
