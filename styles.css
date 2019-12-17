@@ -101,7 +101,7 @@ h2{
     width:55%;
     margin-left:90px;
     left:700px;
-    height:720px;
+    height:735px;
     align-content:center;
     top:130px;
 }
@@ -217,7 +217,7 @@ ol{
 }
 #orde{
     position:relative;
-    left:270px;
+    left:290px;
     bottom:230px;
     display:none;
 }
