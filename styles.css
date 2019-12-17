@@ -219,6 +219,7 @@ ol{
     position:relative;
     left:290px;
     bottom:230px;
+    padding:10px;
     display:none;
 }
 #deliver{
