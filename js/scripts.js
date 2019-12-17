@@ -430,7 +430,7 @@ $(document).ready(function(){
         return false;
       }
       else{
-          alert("thankyou!");
+          alert("Hi "  +  name  + " thankyou for choosing pizza inn, your oder will be Delivered at your location ,prepare ksh 200 for delivery!");
           event.preventDefault();
       }
       
