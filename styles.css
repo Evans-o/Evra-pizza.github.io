@@ -185,3 +185,7 @@ footer >h3{
     color:black;
     right:550px;
 }
+h{
+    text-decoration:underline;
+    font-size:30px;
+}
