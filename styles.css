@@ -23,6 +23,8 @@ body{
     font-weight:bolder;
 }
 #the{
+    position:relative;
+    bottom:100px;
     color:brown;
     font-family: 'Dancing Script', cursive;
     font-size:33px;
@@ -175,5 +177,5 @@ footer >h3{
 }
 #nice{
     position:relative;
-    top:100px;
+    bottom:40px;
 }
