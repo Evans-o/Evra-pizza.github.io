@@ -401,6 +401,8 @@ $(document).ready(function(){
     $("#checkout").click(function(){
 $("#checkout").slideDown('1500').hide('1500');
 $("#deliver").show('100');
+event.preventDefault();
+
     }
 )})
 
@@ -414,6 +416,12 @@ $(document).ready(function(){
     })
 })
 
+$(document).ready(function(){
+    $("#ord").click(function(){
+        $("#ord").fadeOut(3000).hide();
+        $("#checkout").fadeIn(3500).show();
+    })
+})
 $(document).ready(function(){
     $("form#togle").submit(function(event){
       // event.preventDefault();
@@ -439,6 +447,7 @@ $("#hide").slideDown(2000).hide("2000");
 $(".summary").hide(2000);
 $('#list').hide(2000);
 $("#ord").fadeIn(3000);
+$("#checkout").hide("200");
       
     });
   

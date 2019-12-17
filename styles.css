@@ -211,7 +211,7 @@ ol{
 #ord{
     position:relative;
     bottom:200px;
-    right:300px;
+    left:150px;
     padding:10px;
     display:none;
 }
