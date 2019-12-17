@@ -406,8 +406,9 @@ $("#deliver").show('100');
 
 $(document).ready(function(){
     $("#deliver").click(function(){
-        $("#deliver").show("'150");
+        $("#deliver").hide("'150");
         $("#hide").show("200");
+        $("#checkout").show('1500');
     })
 })
 
@@ -417,11 +418,12 @@ $(document).ready(function(){
       var name = $("input#name").val();
       var number = $("input#num").val();
       var location= $("textarea#location").val();
-      if ($("input#name").val() && $("input#num").val() && $("input#location")){
+      if ($(name).val() && $(number).val() && $(location)){
         alert (name + ", we have received your message. Thank you for reaching out to us.");
       }
       else {
-        alert("Please enter your name and email!");
+        alert("Please enter your name your number and location!");
+        event.preventDefault();
       }
       
     });
