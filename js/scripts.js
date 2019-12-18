@@ -13,6 +13,9 @@ $(function () {
         if(number===""){
             alert("please enter number of pizza(s)")
             event.preventDefayult();
+        }else if(number==0){
+            alert("invalid number off pizza(s)");
+            event.preventDefayult();
         }
         
         //Function order
