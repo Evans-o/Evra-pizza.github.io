@@ -9,6 +9,10 @@ $(function () {
         let topping = $("#toppings option:selected").val();
         let number = $("#number").val();
         console.log(size);
+        if(number===""){
+            lert("enter number");
+            event.preventDefault();
+        }
 
         //Function order
         let order = (f, s, c, t, n, total) => {
