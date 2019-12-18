@@ -196,8 +196,12 @@ ol{
     position:relative;
     bottom:480px;
     left:540px;
-    width:50%;
+    width:45%;
     display:none;
+    background-color:grey;
+    margin-top:350px;
+    margin-right:550px;
+    padding-left:20px;
 }
 .form-control{
     margin:8px;
@@ -230,4 +234,8 @@ ol{
     display:none;
     position:relative;
     bottom:30px;
+}
+h5{
+    color:white;
+    font-weight:bolder
 }
