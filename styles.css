@@ -226,3 +226,8 @@ ol{
     position:relative;
     top:10px;
 }
+#down{
+    display:none;
+    position:relative;
+    bottom:30px;
+}

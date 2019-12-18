@@ -427,9 +427,16 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#orde").click(function(){
         $("#orde").hide();
-        $("#ord").slideDown(3000);
+        $("#ord").hide(3000);
         $(".summary").fadeIn(3000);
         $('#list').fadeIn(3000);
+        $("#down").fadeIn(3000);
+        $("#checkout").fadeOut(3000);
+    })
+    $(document).ready(function(){
+    $("#down").click(function(){
+        $("#checkout").fadeIn(3000);
+    })
     })
 })
 $(document).ready(function(){
