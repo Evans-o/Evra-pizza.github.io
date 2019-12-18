@@ -10,6 +10,11 @@ $(function () {
         let number = $("#number").val();
         console.log(size);
 
+        if(number===""){
+            alert("please enter number of pizza(s)")
+            event.preventDefayult();
+        }
+        
         //Function order
         let order = (f, s, c, t, n, total) => {
             return {f, s, c, t, n, total};
@@ -394,7 +399,7 @@ $(function () {
             + newOrder.c + "<br>" + "Toppings :     "
             + newOrder.t + "<br>" + " Number of pizza  :    "
             + newOrder.n + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px')
     })
 });
 $(document).ready(function(){
