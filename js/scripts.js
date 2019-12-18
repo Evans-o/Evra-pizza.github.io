@@ -14,7 +14,7 @@ $(function () {
             alert("please enter number of pizza(s)")
             event.preventDefayult();
         }else if(number==0){
-            alert("invalid number off pizza(s)");
+            alert("invalid number of pizza(s)");
             event.preventDefayult();
         }
         
