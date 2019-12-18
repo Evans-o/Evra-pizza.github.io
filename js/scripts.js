@@ -402,6 +402,7 @@ $(document).ready(function(){
 $("#checkout").slideDown('1500').hide('1500');
 $("#deliver").show('100');
 $("#orde").hide();
+$("#down").hide();
 event.preventDefault();
 
     }
