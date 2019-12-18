@@ -211,13 +211,13 @@ ol{
 #ord{
     position:relative;
     bottom:230px;
-    left:260px;
+    right:0px;
     padding:10px;
     display:none;
 }
 #orde{
     position:relative;
-    left:290px;
+    left:40px;
     bottom:230px;
     padding:10px;
     display:none;
