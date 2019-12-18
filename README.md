@@ -1,4 +1,4 @@
-<h1>Piza-Inn</h1>
+<h1>Pizza-Inn</h1>
 <h1>Author</h1>
 <li>Evans - Opindi</li>
 <h1>Description</h1>
@@ -16,7 +16,7 @@ https://evans-o.github.io/Evra-pizza.github.io/.
 <li>Bootstrap</li>
 <li>jquery</li>
 <h2>Known Bugs</h2>
-<li>Tables are not showing</il>
+<li>Tables are not showing</li>
 <li>The site is not responsive enough for some devices.</li>
 <h2>Contact information</h2>
 <li>If you have any question or a concern please you can get in touch:
