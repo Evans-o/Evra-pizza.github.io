@@ -9,8 +9,8 @@ $(function () {
         let topping = $("#toppings option:selected").val();
         let number = $("#number").val();
         console.log(size);
-        if(number===""){
-            lert("enter number");
+        if(number==="") number =0{
+
             event.preventDefault();
         }
 
